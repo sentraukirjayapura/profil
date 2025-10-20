@@ -1,0 +1,164 @@
+/* ======== RESET & DASAR ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url('https://blogger.googleusercontent.com/img/a/AVvXsEg5YV8MqG6z0X-4y-g4mBD-sqaecMfbZ5yw5LqM0yA-fAYVUl7e63LTJ2q5opICRWro_mQj9sGVIBHMJwwuCURLDkn_BBZdJSVc_Kj4P5_Q7ayzgq2BoIdluf99yZsws0bMnG7rkUmbkS1Db3IunGQRsm1s_HlaCvKH6AJFgdPvq2nMpkXpzyhTNLuxT4k=s1600') repeat center center fixed; /* tambahkan background ukiran */
+  background-size: cover;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ======== HEADER ======== */
+header {
+  background-color: rgba(58, 46, 37, 0.95);
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ======== NAVBAR ======== */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e4b366;
+}
+
+/* ======== HERO ======== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.3rem;
+  color: #ffd480;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 10px auto 25px;
+  font-size: 1.1rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  background-color: #e4b366;
+  color: #3a2e25;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #fff;
+  color: #3a2e25;
+}
+
+/* ======== BAGIAN UMUM ======== */
+section, main {
+  padding: 60px 20px;
+  background-color: rgba(255,255,255,0.9);
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ======== GALERI ======== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ======== MAP ======== */
+.map-container {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #3a2e25;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
